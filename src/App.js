@@ -20,7 +20,7 @@ function App() {
           selectedDistributor={selectedDistributor}
           setSelectedDistributor={setSelectedDistributor}
         />
-        <Dashboard />
+        <Dashboard distributor={selectedDistributor} />
       </div>
     </div>
   );
