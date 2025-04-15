@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import DistributorCard from "./DistributorCard";
+import ForecastChart from "./charts/ForecastChart";
 
 const Dashboard = ({ distributor }) => {
   const formatNumber = (num) => {
@@ -68,6 +69,22 @@ const Dashboard = ({ distributor }) => {
           }
         />
       </div>
+      <div className="charts-container">
+        <div className="chart-card large">
+          <div className="chart-header">
+            <h3>Shipment Trend & Forecast</h3>
+            <div className="chart-actions">
+              <button className="chart-action-button">
+                <i className="fas fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </div>
+          <ForecastChart
+            historicalData={distributor.historicalShipments}
+            forecastData={distributor.forecastData}
+          />
+        </div>
+      </div>
     </div>
   );
 };
@@ -82,6 +99,18 @@ Dashboard.propTypes = {
     forecastedShipment: PropTypes.number.isRequired,
     ytdAverageShipment: PropTypes.number.isRequired,
     onTimeDelivery: PropTypes.number.isRequired,
+    historicalShipments: PropTypes.arrayOf(
+      PropTypes.shape({
+        month: PropTypes.string.isRequired,
+        quantity: PropTypes.number.isRequired,
+      }),
+    ).isRequired,
+    forecastData: PropTypes.arrayOf(
+      PropTypes.shape({
+        month: PropTypes.string.isRequired,
+        quantity: PropTypes.number.isRequired,
+      }),
+    ).isRequired,
   }).isRequired,
 };
 

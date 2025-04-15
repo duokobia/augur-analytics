@@ -27,7 +27,6 @@ function DistributorCard({ title, value, trend, trendValue }) {
 DistributorCard.propTypes = {
   title: PropTypes.string.isRequired,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  icon: PropTypes.string.isRequired,
   trend: PropTypes.oneOf(["up", "down", "neutral"]).isRequired,
   trendValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
     .isRequired,
