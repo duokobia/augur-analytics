@@ -30,7 +30,6 @@ function ForecastChart({ historicalData, forecastData }) {
       <LineChart
         data={combinedData}
         margin={{ top: 50, right: 50, left: 30, bottom: 30 }}
-        style={{ backgroundColor: "#ffffff" }}
       >
         <CartesianGrid strokeDasharray="3 3" stroke="#eee" />
         <XAxis dataKey="month" />
@@ -72,8 +71,6 @@ ForecastChart.propTypes = {
       quantity: PropTypes.number.isRequired,
     }),
   ).isRequired,
-
-  // Optional props with defaults
   chartHeight: PropTypes.number,
   actualLineColor: PropTypes.string,
   forecastLineColor: PropTypes.string,

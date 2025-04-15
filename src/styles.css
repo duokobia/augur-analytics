@@ -100,7 +100,7 @@ body {
 .notification-badge {
   position: absolute;
   top: -5px;
-  right: -1px;
+  right: -5px;
   background-color: #FF5252;
   color: white;
   border-radius: 15px;
@@ -261,7 +261,6 @@ body {
 .dashboard-header{
   padding: 36px 24px 16px 24px;
 }
-
 .dashboard-actions{
   display: flex;
   justify-content: space-between;
@@ -270,7 +269,10 @@ body {
   margin: 16px 0 8px 0;
   padding: 16px 20px 16px 20px;
 }
-.date-range{
+.date-range {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
   padding: 6px 8px;
   border: 2px solid #3366CC;
   border-radius: 6px;
@@ -280,10 +282,14 @@ body {
   gap: 24px;
 }
 .action-button{
+  display: flex;
+  align-items: center;
+  gap: 8px; 
   padding: 6px 14px;
   border: 2px solid #3366CC;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 /* Distributor card */
@@ -298,7 +304,7 @@ body {
   background: linear-gradient(170deg, #a8d9f8 0%, #eaf6fb 60%, #009afa 100%);
   color: #3e4756;
   border-radius: 12px;
-  padding: 10px 0 8px 25px;
+  padding: 10px 0 8px 20px;
   min-width: 250px; 
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3); 
   transition: all 0.3s ease; 
@@ -320,6 +326,9 @@ body {
 }
 
 .card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 18px; 
   font-weight: 600; 
   margin-bottom: 10px; 
@@ -397,4 +406,14 @@ body {
 }
 .detail-action{
   padding: 6px 8px;
+}
+
+/* Charts */
+.charts-container{
+  display: flex;
+  gap: 80px;
+  padding: 42px;
+  margin: 42px 24px;
+  border-radius: 12px;
+  background-color: white;
 }
