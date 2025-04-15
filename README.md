@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# 📊 Augur Analytics Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This ReactJS application, developed for the PepsiCo Advanced Software Engineering frontend assessment on Forage platform, showcases my frontend development skills. It presents a modern, responsive analytics dashboard for managing and viewing distributor performance.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Project Overview
 
-### `npm start`
+**Augur Analytics** is an interactive dashboard designed to provide clear and actionable insights into distributor data. It includes:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 📈 Real-time data display
+- 🔍 Search and filter capabilities
+- 🧭 Sidebar navigation
+- 🧑‍💼 Distributor detail views
+- 🛠 Responsive design with fixed navbar and sidebar
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🖥️ Screenshot
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Here is a snapshot of the analytics dashboard implemented:
 
-### `npm run build`
+## ![Dashboard Snapshot](.images/augur-dashboard.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🖥️ Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Frontend:** React, JSX, CSS
+- **Icons:** [react-icons](https://react-icons.github.io/react-icons)
+- **Data Mocking:** Static JSON (can be extended to real APIs)
+- **React Chart Libraries**: Recharts library was used for rendering charts and graphs.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠 Setup & Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the repository**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/duokobia/augur-analytics.git
+cd augur-analytics
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm install
+```
 
-## Learn More
+3. Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Open your browser and navigate to `http://localhost:3000` to view the application.
 
-### Code Splitting
+## Code Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The project structure is organized as follows:
 
-### Analyzing the Bundle Size
+```
+augur-analytics/
+├── .husky/
+│   ├── pre-commit
+├── node_modules/
+│   │
+├── public/
+│   ├── images/
+│   │   └── ...
+├── src/
+│   ├── components/
+│   │   └── ...
+│   ├── data/
+│   │   └── ...
+│   └── App.js
+│   └── index.css
+│   └── index.js
+│   └── styles.css
+├── .eslintrc.json
+└── .gitignore
+├── .prettierrc
+└── package-lock.json
+└── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- I extend my deepest thanks to the Forage team and the PepsiCo team for affording me this opportunity to demonstrate my frontend development capabilities.
