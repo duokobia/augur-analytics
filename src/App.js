@@ -12,7 +12,7 @@ function App() {
   );
 
   return (
-    <div className="App">
+    <div className="app">
       <Navbar />
       <div className="app-container">
         <Sidebar

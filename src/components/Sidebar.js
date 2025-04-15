@@ -27,7 +27,7 @@ const Sidebar = ({
         ))}
       </div>
       <div className="sidebar-footer">
-        <button className="add-button">
+        <button className="action-button">
           <FaPlus className="add-icon" />
           <span>Add Distributor</span>
         </button>
