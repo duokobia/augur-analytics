@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FaArrowDown } from "react-icons/fa";
+import { FaArrowTrendUp } from "react-icons/fa6";
+import { MdOutlineTrendingFlat } from "react-icons/md";
 
 function DistributorCard({ title, value, trend, trendValue }) {
   return (
@@ -9,9 +11,11 @@ function DistributorCard({ title, value, trend, trendValue }) {
         <div className="card-title">{title}</div>
         <div className="card-value">{value}</div>
         <div className={`card-trend ${trend}`}>
-          {trend === "up" && <i className="fas fa-arrow-up"></i>}
-          {trend === "down" && <FaArrowDown className="arrow-down-icon" />}
-          {trend === "neutral" && <i className="fas fa-minus"></i>}
+          {trend === "up" && <FaArrowTrendUp className="arrow-icon" />}
+          {trend === "down" && <FaArrowDown className="arrow-icon" />}
+          {trend === "neutral" && (
+            <MdOutlineTrendingFlat className="arrow-icon" />
+          )}
           <span>{trendValue}</span>
         </div>
       </div>

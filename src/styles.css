@@ -289,37 +289,29 @@ body {
 /* Distributor card */
 .metrics-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(4, 1fr); 
   gap: 36px; 
   padding: 36px 24px 36px 24px;
 }
 
 .metric-card {
-  background: linear-gradient(145deg, #1e21dd, #2575fc); 
-  color: white;
+  background: linear-gradient(170deg, #a8d9f8 0%, #eaf6fb 60%, #009afa 100%);
+  color: #3e4756;
   border-radius: 12px;
-  padding: 20px;
-  width: 300px; 
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1); 
+  padding: 10px 0 8px 25px;
+  min-width: 250px; 
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3); 
   transition: all 0.3s ease; 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 160px; 
+  justify-content: start;
+  align-items: start;
+  max-height: 160px; 
 }
 
 .metric-card:hover {
   box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.15); 
   transform: translateY(-5px); 
-}
-
-.card-icon {
-  font-size: 36px; 
-  margin-bottom: 10px; 
-  text-align: center; 
-  background-color: rgba(255, 255, 255, 0.2); 
-  padding: 10px;
-  border-radius: 50%;
 }
 
 .card-content {
@@ -341,17 +333,17 @@ body {
 
 .card-trend {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .card-trend span {
-  margin-left: 5px; 
+  margin-left: 15px; 
 }
 
 .card-trend.up {
-  color: #28a745; 
+  color: #0a9c2c; 
 }
 
 .card-trend.down {
@@ -360,22 +352,10 @@ body {
 
 .card-trend.neutral {
   color: #ffc107; 
+  color: #e9b824; 
 }
-
-.card-trend i {
-  font-size: 18px;
-}
-
-.card-trend.up i {
-  color: #28a745;
-}
-
-.card-trend.down i {
-  color: #dc3545;
-}
-
-.card-trend.neutral i {
-  color: #ffc107;
+.arrow-icon {
+  font-size: 20px; 
 }
 
 
