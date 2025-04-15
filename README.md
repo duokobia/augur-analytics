@@ -20,7 +20,7 @@ This ReactJS application, developed for the PepsiCo Advanced Software Engineerin
 
 Here is a snapshot of the analytics dashboard implemented:
 
-## ![Dashboard Snapshot](.images/augur-dashboard.png)
+## ![Dashboard Snapshot](./src/assets/augur-dashboard.png)
 
 ## 🖥️ Tech Stack
 
@@ -68,6 +68,8 @@ augur-analytics/
 │   ├── images/
 │   │   └── ...
 ├── src/
+│   ├── assets/
+│   │   └── ...
 │   ├── components/
 │   │   └── ...
 │   ├── data/
