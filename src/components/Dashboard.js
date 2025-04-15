@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import DistributorCard from "./DistributorCard";
 import ForecastChart from "./charts/ForecastChart";
 import RegionalDistributionChart from "./charts/RegionalDistributionChart.jsx";
+import DistributorDetails from "./DistributorDetails";
+
 import { IoCalendarNumberOutline } from "react-icons/io5";
 import { IoMdDownload, IoMdPrint } from "react-icons/io";
 import { FaRegCalendarCheck } from "react-icons/fa";
@@ -93,6 +95,7 @@ const Dashboard = ({ distributor }) => {
           <RegionalDistributionChart data={distributor.topProducts} />
         </div>
       </div>
+      <DistributorDetails distributor={distributor} />
     </div>
   );
 };
